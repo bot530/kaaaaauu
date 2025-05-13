@@ -1,0 +1,122 @@
+/* Estilo base */
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Estilo para o botão do WhatsApp */
+#whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.whatsapp-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(to right, #111827, #111827);
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção Orçamento */
+.orçamento-section {
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #111827, #111827);
+}
+
+.orçamento-section h2 {
+  font-size: 2.5rem;
+  color: white;
+}
+
+/* Estilos adicionais para responsividade */
+@media (max-width: 1024px) {
+  /* Ajustes para notebooks e telas grandes */
+  .whatsapp-icon {
+    width: 55px;
+    height: 55px;
+  }
+
+  .orçamento-section h2 {
+    font-size: 2rem;
+  }
+
+  /* Ajusta o layout de produtos em telas grandes */
+  .produtos-destaque .text-center {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Ajustes para tablets */
+  .whatsapp-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .orçamento-section h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Ajusta o layout de produtos em telas menores */
+  .produtos-destaque .text-center {
+    padding: 20px;
+  }
+
+  /* Ajusta o layout de elementos em telas pequenas */
+  .produtos-destaque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .produtos-destaque .bg-white {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ajustes para smartphones */
+  .whatsapp-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .orçamento-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .produtos-destaque h3,
+  .produtos-destaque p {
+    font-size: 1rem;
+  }
+
+  /* Ajusta o layout da seção de rodapé */
+  footer .text-lg {
+    display: flex;
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: flex-start; /* Alinha os itens à esquerda */
+    gap: 8px; /* Adiciona um espaço entre os itens */
+  }
+
+  footer .text-lg a {
+    text-decoration: none;
+    color: white;
+  }
+
+  footer .text-lg p {
+    margin: 0;
+  }
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArcelorMittal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="relative text-white min-h-screen bg-white">
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Seção do Banner com a imagem de fundo -->
+  <div class="relative bg-cover bg-center h-[300px] md:h-[500px]" style="background-image: url('fundo.jpg'); height: 500px;">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative z-10">
+      <!-- Navbar -->
+      <header class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+        <img src="logo-arcelormittal.gif" alt="Logo ArcelorMittal" class="h-10" />
+        <nav class="space-x-6 text-sm font-medium">
+          <a href="#" class="hover:underline">Produtos</a>
+          <a href="#" class="hover:underline">Vantagens</a>
+          <a href="#" class="hover:underline">Sobre Nós</a>
+        </nav>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="flex flex-col md:flex-row items-center justify-between px-8 py-16 max-w-7xl mx-auto">
+        <div class="md:w-1/2 space-y-5">
+          <h1 class="text-4xl md:text-5xl font-bold leading-tight"></h1>
+          <p class="text-lg"></p>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- Produtos em Destaque -->
+  <section class="produtos-destaque py-16">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-red-600">Nossos Produtos</h2>
+      <p class="text-lg text-gray-500 max-w-2xl mx-auto">Oferecemos uma ampla variedade de produtos em aço para atender às necessidades do seu projeto.</p>
+    </div>
+    <div class="flex flex-col md:flex-row justify-center items-center gap-8 px-6">
+      <div class="bg-white text-center p-6 rounded-xl shadow-lg hover:scale-105 transition duration-300 border border-gray-100">
+        <div class="bg-gradient-to-r from-pink-500 to-red-500 w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center text-white text-2xl">
+          <i class="ph ph-buildings"></i>
+        </div>
+        <h3 class="text-xl font-bold text-gray-800">Aço para Construção</h3>
+        <p class="text-gray-600 mt-2">Barras, perfis e chapas para construção civil e estruturas metálicas.</p>
+      </div>
+
+      <div class="bg-white text-center p-6 rounded-xl shadow-lg hover:scale-105 transition duration-300 border border-gray-100">
+        <div class="bg-gradient-to-r from-pink-500 to-red-500 w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center text-white text-2xl">
+          <i class="ph ph-car"></i>
+        </div>
+        <h3 class="text-xl font-bold text-gray-800">Aço Automotivo</h3>
+        <p class="text-gray-600 mt-2">Chapas e componentes de alta resistência para a indústria automotiva.</p>
+      </div>
+
+      <div class="bg-white text-center p-6 rounded-xl shadow-lg hover:scale-105 transition duration-300 border border-gray-100">
+        <div class="bg-gradient-to-r from-pink-500 to-red-500 w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center text-white text-2xl">
+          <i class="ph ph-factory"></i>
+        </div>
+        <h3 class="text-xl font-bold text-gray-800">Aço para Indústria</h3>
+        <p class="text-gray-600 mt-2">Soluções em aço para máquinas, equipamentos e processos industriais.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Por que escolher a ArcelorMittal -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center text-red-600 mb-2">Por que escolher a ArcelorMittal?</h2>
+      <p class="text-center text-gray-500 mb-12">A líder mundial em siderurgia oferece as melhores soluções para seu negócio.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="flex items-start gap-4 bg-white p-6 rounded-xl shadow border border-gray-100">
+          <div class="bg-pink-100 text-pink-600 p-3 rounded-full text-xl">
+            <i class="ph ph-medal"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg text-gray-800">Qualidade Garantida</h3>
+            <p class="text-sm text-gray-600">Produtos com certificação internacional e rigorosos controles de qualidade em toda a cadeia produtiva.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 bg-white p-6 rounded-xl shadow border border-gray-100">
+          <div class="bg-pink-100 text-pink-600 p-3 rounded-full text-xl">
+            <i class="ph ph-truck"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg text-gray-800">Logística Eficiente</h3>
+            <p class="text-sm text-gray-600">Entrega rápida e segura em todo o território nacional, com rastreamento em tempo real.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 bg-white p-6 rounded-xl shadow border border-gray-100">
+          <div class="bg-pink-100 text-pink-600 p-3 rounded-full text-xl">
+            <i class="ph ph-headphones"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg text-gray-800">Suporte Técnico</h3>
+            <p class="text-sm text-gray-600">Equipe especializada pronta para auxiliar na escolha do melhor produto para sua aplicação.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 bg-white p-6 rounded-xl shadow border border-gray-100">
+          <div class="bg-pink-100 text-pink-600 p-3 rounded-full text-xl">
+            <i class="ph ph-leaf"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg text-gray-800">Sustentabilidade</h3>
+            <p class="text-sm text-gray-600">Processos produtivos que minimizam o impacto ambiental e maximizam a reciclabilidade.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Orçamento -->
+  <section class="orçamento-section py-16 text-white">
+    <div class="text-center mb-8">
+      <h2 class="text-3xl font-semibold">Pronto para fazer seu orçamento?</h2>
+      <p class="text-lg">Nossa equipe comercial está pronta para atender você pelo WhatsApp com agilidade e eficiência.</p>
+    </div>
+    <a href="https://wa.me/5547997150231" class="cta-button">Solicitar Orçamento Agora</a>
+  </section>
+
+  <!-- Seção Sobre a ArcelorMittal -->
+  <section class="sobre-arcelormittal py-16 bg-white text-gray-800">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 mb-8 md:mb-0">
+        <h2 class="text-3xl font-bold text-red-600 mb-4">Sobre a ArcelorMittal</h2>
+        <p class="text-lg text-gray-500 mb-4">Líder mundial em siderurgia, a ArcelorMittal está presente em 60 países e é a principal fornecedora de aço para os mercados automotivo, construção, eletrodomésticos e embalagens.</p>
+        <p class="text-lg text-gray-500 mb-4">No Brasil operamos com mineração e usinas siderúrgicas que produzem uma ampla gama de produtos de aço de alta qualidade.</p>
+        <p class="text-lg text-gray-500">Nossa missão é produzir aço de forma sustentável, inovadora e responsável, contribuindo para o desenvolvimento da indústria nacional.</p>
+      </div>
+      <div class="md:w-1/2">
+        <img src="prod.jpg" alt="Fábrica ArcelorMittal" class="w-full h-auto rounded-lg shadow-lg">
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/+5547997150231" target="_blank" id="whatsapp-button" class="whatsapp-icon flex items-center justify-center">
+    <i class="ph ph-whatsapp-logo text-green text-3xl"></i>
+  </a>
+
+  <footer class="bg-[#0f172a] text-white py-12">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+      <!-- Sobre -->
+      <div>
+        <img src="logo-arcelormittal.gif" alt="Logo" class="h-6 mb-3">
+        <p class="text-gray-400">
+          Líder mundial em siderurgia, fornecendo soluções em aço de qualidade para diversos setores da indústria.
+        </p>
+      </div>
+
+      <!-- Produtos -->
+      <div>
+        <h4 class="font-bold mb-4">Produtos</h4>
+        <ul class="space-y-2 text-gray-300">
+          <li><a href="#" class="hover:text-white">Aço para Construção</a></li>
+          <li><a href="#" class="hover:text-white">Aço Automotivo</a></li>
+          <li><a href="#" class="hover:text-white">Aço para Indústria</a></li>
+          <li><a href="#" class="hover:text-white">Aços Especiais</a></li>
+        </ul>
+      </div>
+
+      <!-- Contato -->
+      <div>
+        <h4 class="font-bold mb-4">Contato</h4>
+        <ul class="space-y-2 text-gray-300">
+          <li class="flex items-center gap-2"><i class="ph ph-envelope-simple text-pink-500"></i> arcelormittalnet@arcelormittal.com.br</li>
+        </ul>
+      </div>
+
+      <!-- Atendimento -->
+      <div>
+        <h4 class="font-bold mb-4">Atendimento</h4>
+        <a href="https://wa.me/5547997150231" class="inline-block bg-gradient-to-r from-pink-500 to-red-500 text-white font-semibold px-4 py-2 rounded-full text-sm mb-4">
+          <i class="ph ph-whatsapp-logo inline mr-2"></i> WhatsApp Comercial
+        </a>
+        <div class="flex space-x-4 text-lg text-gray-400">
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-500 text-xs">
+      © 2025 ArcelorMittal Brasil. Todos os direitos reservados.
+    </div>
+  </footer>
+
+</body>
+</html>
